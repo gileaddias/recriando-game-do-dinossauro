@@ -1,0 +1,42 @@
+.dino{
+    width: 200px;
+    height: 200px;
+    background: url(img/dino1.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    background: url(img/cactus1.png);
+}
+
+.game-over {
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideleft {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    animation: slideleft 600s infinite linear;
+    width: 100%;
+    height: 400px;
+    
+}
